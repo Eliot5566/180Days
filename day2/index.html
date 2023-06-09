@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="donut.png">
+    <script type="text/javascript" src="eat.js"></script>
+    <title>每日午餐訂購</title>
+    <a href="index.html">
+        <img id="aicon" src="dish.png" type="icon" alt="">
+    </a>
+    <!-- <script>
+        function enableOptionsB(radio) {
+            var po3 = document.getElementsByName("po3");
+            for (var i = 0; i < po3.length; i++) {
+                po3[i].disabled = !radio.checked;
+            }
+        }
+
+        function disableOptionsB(radio) {
+            var po3 = document.getElementsByName("po3");
+            for (var i = 0; i < po3.length; i++) {
+                po3[i].disabled = radio.checked;
+                if (radio.checked) {
+                    po3[i].checked = false;
+                }
+            }
+        }
+
+        var resetButton = document.getElementById("resetButton");
+        resetButton.addEventListener("click", function () {
+            var radios = document.getElementsByName("po3");
+            for (var i = 0; i < radios.length; i++) {
+                radios[i].checked = false;
+            }
+        });
+    </script> -->
+</head>
+
+<body>
+    <div id="food">
+        <!-- <img id="foodimg" src="food.jpg" alt="美食"> -->
+    </div>
+    <form id="myForm">
+        <h1>公司午餐訂購</h1>
+        <h4>今日訂餐餐廳:好好吃餐廳</h4>
+        <h2>訂購人資料</h2>
+        <form action="">
+            <fieldset>
+                <legend>基本資料</legend>
+                <label for="names">訂購人姓名:</label>
+                <input type="text" name="" id="names" required>
+                <br>
+
+                <label for="cel">&nbsp;&nbsp;&nbsp;&nbsp;聯絡電話:</label>
+                <input type="tel" name="" id="cel" required>
+            </fieldset>
+        </form>
+
+        <h2>1.今天想吃什麼</h2>
+        <input type="radio" name="po1" id="rice" data-price="5">
+        <label for="rice">海南雞飯&nbsp;$5</label>
+
+        <input type="radio" name="po1" id="rice2" data-price="10">
+        <label for="rice2">排骨蛋炒飯&nbsp;$10</label>
+
+        <input type="radio" name="po1" id="rice3" data-price="8">
+        <label for="rice3">椒麻雞飯&nbsp;$8</label>
+
+        <input type="radio" name="po1" id="rice4" data-price="9">
+        <label for="rice4">排骨飯&nbsp;$9</label>
+
+        <input type="radio" name="po1" id="rice5" data-price="12">
+        <label for="rice5">炸雞腿飯&nbsp;$12</label>
+        <br>
+        <input type="radio" name="po1" id="rice6" data-price="10">
+        <label for="rice6">滷雞腿飯&nbsp;$10</label>
+
+        <input type="radio" name="po1" id="rice7" data-price="20">
+        <label for="rice7">蒲燒鯛魚飯&nbsp;$20</label>
+
+        <input type="radio" name="po1" id="rice8" data-price="8">
+        <label for="rice8">雞排飯&nbsp;$8</label>
+
+        <input type="radio" name="po1" id="rice9" data-price="5">
+        <label for="rice9">豬排飯&nbsp;$5</label>
+
+        <input type="radio" name="po1" id="rice10" data-price="100">
+        <label for="rice10">控肉飯&nbsp;$100</label>
+
+
+
+
+        <br>
+        <h4>2.需要湯嗎?</h4>
+        <input type="radio" name="po2" id="yes" onchange="enableOptionsB(this)" data-price="0">
+        <label for="yes">要</label>
+
+        <input type="radio" name="po2" id="set" onchange="disableOptionsB(this)" data-price="0">
+        <label for="set">不要</label>
+
+        <br>
+        <h4>3.今日湯品(#請先回答第二題)</h4>
+        <input type="radio" name="po3" id="soup1" disabled data-price="5">
+        <label for="soup1">豆腐湯&nbsp;$5</label>
+
+        <input type="radio" name="po3" id="soup2" disabled data-price="5">
+        <label for="soup2">蛋花湯&nbsp;$5</label>
+
+        <input type="radio" name="po3" id="soup3" disabled data-price="10">
+        <label for="soup3">青菜湯&nbsp;$10</label>
+
+        <input type="radio" name="po3" id="soup4" disabled data-price="6">
+        <label for="soup4">貢丸湯&nbsp;$6</label>
+
+        <br>
+
+        <h4>4.今日甜點</h4>
+        <input type="radio" name="po5" id="sugar1" data-price="5">
+        <label for="sugar1">布朗尼&nbsp;$5</label>
+
+        <input type="radio" name="po5" id="sugar2" data-price="7">
+        <label for="sugar2">香蕉煎餅&nbsp;$7</label>
+
+        <input type="radio" name="po5" id="sugar3" data-price="8">
+        <label for="sugar3">草莓派&nbsp;$8</label>
+
+        <input type="radio" name="po5" id="sugar4" data-price="5">
+        <label for="sugar4">抹茶布丁&nbsp;$5</label>
+
+        <br>
+        <h4>5.有其他需求嗎?</h4>
+
+        <input type="checkbox" name="po4" id="ord1" data-price="2">
+        <label for="ord1">加飯&nbsp;$2</label>
+
+        <input type="checkbox" name="po4" id="ord2" data-price="1">
+        <label for="ord2">湯加大&nbsp;$1</label>
+
+        <input type="checkbox" name="po4" id="ord3" data-price="5">
+        <label for="ord3">加雞腿&nbsp;$5</label>
+
+        <input type="checkbox" name="po4" id="ord4" data-price="0">
+        <label for="ord4">加辣</label>
+
+        <input type="checkbox" name="po4" id="ord6" data-price="0">
+        <label for="ord6">不須餐具</label>
+
+        <input type="checkbox" name="po4" id="ord5" data-price="0">
+        <label for="ord5">不要加蔥</label>
+        <br>
+        <button id="ResetButton"><a href="index.html">重新選擇</a></button>
+    </form>
+    <br>
+    <p id="totalPrice"></p>
+
+    <button onclick="calculateTotalPrice()">計算價錢</button>
+    <div class="container">
+        <button  class="centered-button">
+             <a href="so.html">確認送出</a></button>
+    </div>
+</body>
+
+</html>

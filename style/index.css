@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #566412;
+    letter-spacing: 2px;
+}
+
+a {
+    color: #8c11c5;
+    font-weight: bold;
+}
+
+/* a.visiree{ */
+/* color:#45156a; */
+/* } */
+
+/* later */
+
+h1 {
+    font-size: 90px;
+    color: #ff8412;
+    margin: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+#top_container {
+    margin: 20px 0 50px 50px;
+}
+
+#logo {
+    float: right;
+    margin: auto;
+    width: 50px;
+
+}
+img{
+    
+    margin: 0;
+    width: 2rem;
+}
+/* change later
+#logo {
+	float: right;
+	margin: 12px 50px; 
+ */
+
+#info_container {
+    font-size: 22px;
+}
+
+.show {
+    color: #ff9915;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#today {
+    border-top: 1px solid #6f7f8f;
+    border-bottom: 1px solid #6f7f8f;
+    padding: 30px 0 30px 0;
+    margin: 0 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.5;
+
+}
+
+#website_list_container {
+    margin: 30px 0 20px 40px;
+}
+
+
+header {
+    text-align: right;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #556;
+}
+
+nav a {
+    margin-left: 10px;
+    font-weight: normal;
+    color: #6f7f8f;
+    text-decoration: none;
+}

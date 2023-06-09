@@ -1,0 +1,33 @@
+div {
+    font-size: 20px;
+}
+
+div>div {
+    width: 100px;
+    height: 100px;
+}
+
+.demo {
+    background-color: #FF9933;
+    /* height: 300px; */
+    /* font-size: 0px;
+    letter-spacing: 0px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+div[id^="reddiv"] {
+    background-color: #FF0000;
+}
+
+div[id^="greendiv"] {
+    background-color: #00FF00;
+}
+
+div[id^="bluediv"] {
+    background-color: #0000FF;
+}
+#pinkk{
+    background-color: pink;
+}

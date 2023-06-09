@@ -1,0 +1,114 @@
+h1 {
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    text-shadow:3px rgb(189, 189, 214);
+}
+
+body {
+    /* background-image: url(./28037.png); */
+    
+    background-image: url(./cat.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+}
+
+/* hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px;
+    opacity: 1;
+} */
+
+
+.btn-outline-success {
+    /* background-color: #dedddf5d; */
+    border-color: #eceaec1c;
+    width: 120px;
+    color: rgb(168, 6, 6);
+    font-size: smaller;
+}
+
+
+.btn-outline-success:hover {
+    background-color: rgb(119, 18, 60);
+    border-width: 4px;
+    border-color: rgb(119, 18, 60);
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url(./28037.png);
+        background-image: url(./2.png);
+    }
+
+    25% {
+        background-image: url(./2.png);
+    }
+
+    50% {
+        background-image: url(./4.png);
+    }
+
+    75% {
+        background-image: url(./3.png);
+    }
+
+    /* 100% {
+        background-image: url(./28037.png);   */
+    
+}
+
+/* 应用动画效果 */
+.slideshow-container {
+    width: 500px;
+    height: 300px;
+    animation: slideshow 0.25s infinite reverse;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slideshow-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-outline-success {
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    /* z-index: -999; */
+}
+button{
+    z-index: 1;
+}
+/* abosolute 會往父層尋找 起始點 position:static會被忽略 繼續找下一個 
+比如position:relative ,如果途中都是static 會直接到body 以視窗位置作為起始點*/
+
+
+h1,p{
+    text-align: center;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    margin: 9vh 0;
+}
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 24px;
+}

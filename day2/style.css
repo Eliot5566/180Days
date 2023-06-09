@@ -1,0 +1,63 @@
+body {
+    background-image: url(./bg.jpg);
+    background-clip: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    position: relative;
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* 浅色或半透明的叠加层 */
+    z-index: -1;
+    background-size: cover;
+}
+
+#aicon{
+    float:right;
+    width:45px;
+}
+
+form {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#foodimg {
+
+
+    float: center;
+    margin: auto;
+    width: 300px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    height: 4vh;
+    
+}
+
+.centered-button {
+    background-color: rgb(210, 218, 143);
+    font-size: 18px;
+    font-style:initial;
+    border:1px solid;
+    border-radius: 10px;    
+    padding: 5px;
+
+
+}
+    
+    
+    
+    

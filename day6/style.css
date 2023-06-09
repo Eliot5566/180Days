@@ -1,0 +1,188 @@
+body{
+	background-color: hwb(338 76% 3%);
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head{
+	background-color: rgb(219, 83, 117);
+}
+
+.right_arm,
+.left_arm
+{background-color: hotpink;}
+
+
+
+.torso,
+.left_leg,
+.right_leg {
+	background-color: #eb5f95;
+}
+
+.head {
+	width: 200px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 200px 200px 0 0;
+	margin-bottom: 10px;
+}
+
+.eyes {
+	display: flex;
+}
+
+.head:hover {
+	width: 350px;
+	transition: 1s ease-in-out;
+}
+
+.upper_body {
+	width: 300px;
+	height: 150px;
+	display: flex;
+}
+
+.left_arm,
+.right_arm {
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.left_arm {
+	margin-right: 10px;
+}
+
+.right_arm {
+	margin-left: 10px;
+}
+
+.right_arm:hover {
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+
+}
+
+.left_arm:hover {
+
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+
+}
+
+.torso {
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+}
+
+.lower_body {
+	width: 200px;
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	display: flex;
+}
+
+.upper_body:hover {
+	width: 200px;
+	transition: 1s ease-in-out;
+}
+
+.left_leg,
+.right_leg {
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg {
+	margin-left: 45px;
+}
+
+
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.right_leg {
+	margin-left: 30px;
+}
+
+.left_eye,
+.right_eye {
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.left_eye {
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.right_eye {
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
+
+p{
+	text-align: center;
+	border-bottom : 1px solid #eb5f95;
+}
+
+@keyframes bou{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+div{
+    
+    animation-duration: 2s;
+    animation-name: bou;
+    color: rgb(8, 16, 92);
+    font-size: large;
+}
+
+h1{
+    display: inline-block;
+    /* margin: 0 0.5rem; */
+    animation-duration: 5s;
+    animation-name: flip;
+}

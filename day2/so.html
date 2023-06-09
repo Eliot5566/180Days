@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐點準備中</title>
+    <link rel="stylesheet" href="wait.css">
+    <script>
+        function calculateTotalPrice() {
+            var selectedOptions = document.querySelectorAll('input[type="radio"]:checked');
+            var selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var totalPrice = 0;
+
+            for (var i = 0; i < selectedOptions.length; i++) {
+                var price = parseFloat(selectedOptions[i].getAttribute('data-price'));
+                totalPrice += price;
+            }
+
+            for (var i = 0; i < selectedCheckboxes.length; i++) {
+                var price = parseFloat(selectedCheckboxes[i].getAttribute('data-price'));
+                totalPrice += price;
+            }
+
+            var totalPriceElement = document.getElementById('totalPrice');
+            totalPriceElement.textContent = '總價錢：$' + totalPrice.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>收到訂單，餐點準備中。</h1>
+    <div id="wait">
+        <div id="todo">
+            <button id="buttonn"><a href="index.html">繼續訂餐</a></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
